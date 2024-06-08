@@ -9,56 +9,58 @@ import Trello from "../assets/images/trelloLogo.png";
 import Monday from "../assets/images/logos_monday.png";
 import Notion from "../assets/images/notionLogo.png";
 import Slack from "../assets/images/logoSlack.png";
+import Paragraph from './Paragraph';
+import Heading from './Heading';
+import Button from './Button';
 
 
 const Banner = () => {
     return (
 
-        <>
-            <div className='bg-homeBg pt-20 flex' >
-
-                <div className=" pt-14 bg-homeBg pl-[102px]">
-                    <h2 className="font-bold text-5xl leading-[65px] w-[500px]">Increase Your Customers Loyalty and Satisfaction</h2>
-                    <p className="w-[430px] pt-2.5 mb-12 font-normal text-xl">We help businesses like yours earn more customers, standout from competitors,  make more money</p>
-                    <button className="py-5 mr-7 px-8 font-medium text-xl	rounded-xl border border-btnColor bg-btnColor text-white">Get Started</button>
-                </div>
-                <div className='pl-[81px] pt-[51px] pb-20'>
-                    <div className='flex'>
-                        <Image
-                            className='pr-5'
-                            alt="BannerOne"
-                            width={408}
-                            height={271}
-                            src={BannerOne}
-                        />
-                        <Image
-                            alt="BannerOne"
-                            width={180}
-                            height={271}
-                            src={BannerTwo}
-                        />
+        <section className='bg-homeBg pt-40 pb-10'>
+            <div className='container mx-auto'>
+                <div className=' grid grid-cols-12 items-center' >
+                    <div className=" col-span-6 pt-14 bg-homeBg">
+                        <Heading className="text-7xl" text="Increase Your Customers Loyalty and Satisfaction"/>
+                        <Paragraph className="pt-2.5 mb-12 " text="We help businesses like yours earn more customers, standout from competitors,  make more money"/>
+                        <Button text="Get Started"/>
                     </div>
-                    <div className='pt-5 flex'>
-                        <Image
-                            className='pr-5'
-                            alt="BannerOne"
-                            width={246}
-                            height={166}
-                            src={BannerThree}
-                        />
-                        <Image
-                            alt="BannerOne"
-                            width={345}
-                            height={166}
-                            src={BannerFour}
-                        />
+                    <div className=' grid col-span-6 justify-end'>
+                        <div className='flex'>
+                            <Image
+                                className='pr-5'
+                                alt="BannerOne"
+                                width={408}
+                                height={271}
+                                src={BannerOne}
+                            />
+                            <Image
+                                alt="BannerOne"
+                                width={180}
+                                height={271}
+                                src={BannerTwo}
+                            />
+                        </div>
+                        <div className='pt-5 flex'>
+                            <Image
+                                className='pr-5'
+                                alt="BannerOne"
+                                width={246}
+                                height={166}
+                                src={BannerThree}
+                            />
+                            <Image
+                                alt="BannerOne"
+                                width={345}
+                                height={166}
+                                src={BannerFour}
+                            />
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div className='bg-homeBg pb-8	'>
-            <div className=' bg-[#F8FFF9] pl-28 py-11 pr-36 flex justify-between'>
-                
+            <div className='bg-homeBg pb-8 mt-20	'>
+            <div className=' bg-[#F8FFF9] pl-28 py-11 pr-36 flex justify-between'>   
                 <Image
                     alt="Google"
                     width={89}
@@ -89,10 +91,10 @@ const Banner = () => {
                     height={30}
                     src={Slack}
                 />
-                </div>
+            </div>
             </div>
 
-        </>
+        </section>
     )
 }
 

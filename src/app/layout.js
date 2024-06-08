@@ -18,12 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={Poppins.variable}>
-        <div className=" mx-auto max-w-[1440px] bg-black">
         <Navbar />
         {children}
         <Footer/>
-        </div>
-       
         </body>
     </html>
   );
